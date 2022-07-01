@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh">
+
+<head>
+    <title>预约挂号</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <!-- 巨幕 -->
+    <div class="jumbotron jumbotron-fluid pb-1 pt-5 mb-0">
+        <div class="container">
+            <h1 class="display-3">预约挂号</h1>
+            <p class="lead">东方医院</p>
+        </div>
+    </div>
+    <!-- 页面导航 -->
+    <nav class="breadcrumb">
+        <a class="breadcrumb-item" href="index.html">科室导航</a>
+        <a class="breadcrumb-item" href="scheduling.html">门诊排班</a>
+        <a class="breadcrumb-item" href="patient.html">就诊人管理</a>
+        <span class="breadcrumb-item active">预约挂号</span>
+    </nav>
+
+    <div class="container">
+
+
+        <ul class="list-group">
+            <li class="list-group-item">科室
+                <div class="list-group">
+                    <a href="http://8.142.71.174:8080/api/dept" class="list-group-item list-group-item-action">GET http://8.142.71.174:8080/api/dept</a>
+                </div>
+            </li>
+            <li class="list-group-item">医生
+                <div class="list-group">
+                    <a href="http://8.142.71.174:8080/api/doctor" class="list-group-item list-group-item-action">GET http://8.142.71.174:8080/api/doctor</a>
+                </div>
+            </li>
+            <li class="list-group-item">就诊人
+                <div class="list-group">
+                    <a href="http://8.142.71.174:8080/api/patient" class="list-group-item list-group-item-action">GET http://8.142.71.174:8080/api/patient</a>
+                    <a href="http://8.142.71.174:8080/api/patient/1" class="list-group-item list-group-item-action">GET http://8.142.71.174:8080/api/patient/1</a>
+                    <span class="list-group-item list-group-item-action">POST http://8.142.71.174:8080/api/patient</span>
+                    <span class="list-group-item list-group-item-action">PUT http://8.142.71.174:8080/api/patient</span>
+                    <span class="list-group-item list-group-item-action">DELETE http://8.142.71.174:8080/api/patient</span>
+                </div>
+            </li>
+            <li class="list-group-item">科室排班
+                <div class="list-group">
+                    <a href="http://8.142.71.174:8080/api/scheduling/dept/5" class="list-group-item list-group-item-action">GET http://8.142.71.174:8080/api/scheduling/dept/5</a>
+                </div>
+            </li>
+            <li class="list-group-item">预约信息
+                <!-- <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">Item</a>
+                    <a href="#" class="list-group-item list-group-item-action">Item</a>
+                </div> -->
+            </li>
+
+        </ul>
+
+
+    </div>
+
+
+
+    <!-- 页脚&网址地图 -->
+    <div class="jumbotron jumbotron-fluid mb-0 mt-5 py-3">
+        <div class="container">
+            <p class="lead text-center">copyright 牛耳教育@2022</p>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
